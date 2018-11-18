@@ -36,7 +36,7 @@ $Linktowebpage = pq('#vs_classified_192788795 > a > div.clad__summary > div.clad
 phpQuery::unloadDocuments();
 
 
-$db = new Mysqli("localhost", "", "", "scrapperdata");
+$db = new Mysqli("localhost", "root", "mysql", "scrapperdata");
 
 $query = "INSERT INTO Scrap (title, Description, Images, Price, CarYear, MIleage, Phone, Linktowebpage)
  VALUES ('" . $title . "', '" . $description . "', '" . $Images . "', '" . $Price . "', '" . $CarYear . "', '" . $MIleage . "', '" . $Phone . "', '" . $Linktowebpage . "')";
